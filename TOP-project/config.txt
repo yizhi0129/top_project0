@@ -1,4 +1,4 @@
-dim_x=10000
-dim_y=10000
-dim_z=10000
+dim_x=3000
+dim_y=3000
+dim_z=3000
 niter=5

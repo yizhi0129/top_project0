@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/utils.dir/chrono.c.o"
   "CMakeFiles/utils.dir/chrono.c.o.d"
-  "libutils.dylib"
   "libutils.pdb"
+  "libutils.so"
 )
 
 # Per-language clean rules from dependency scanning.

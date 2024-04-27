@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/cc  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.7 -dynamiclib -Wl,-headerpad_max_install_names -o libutils.dylib -install_name @rpath/libutils.dylib CMakeFiles/utils.dir/chrono.c.o 
+/usr/bin/cc -fPIC -shared -Wl,-soname,libutils.so -o libutils.so CMakeFiles/utils.dir/chrono.c.o

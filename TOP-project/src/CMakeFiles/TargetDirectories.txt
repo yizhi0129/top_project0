@@ -1,5 +1,5 @@
-/mnt/e/vs缓存/TOP/TOP-project/src/CMakeFiles/stencil.dir
-/mnt/e/vs缓存/TOP/TOP-project/src/CMakeFiles/utils.dir
-/mnt/e/vs缓存/TOP/TOP-project/src/CMakeFiles/my_executable.dir
-/mnt/e/vs缓存/TOP/TOP-project/src/CMakeFiles/edit_cache.dir
-/mnt/e/vs缓存/TOP/TOP-project/src/CMakeFiles/rebuild_cache.dir
+/Users/yangyizhi/Documents/M1 CHPS/TOP/TOP-project/src/CMakeFiles/stencil.dir
+/Users/yangyizhi/Documents/M1 CHPS/TOP/TOP-project/src/CMakeFiles/utils.dir
+/Users/yangyizhi/Documents/M1 CHPS/TOP/TOP-project/src/CMakeFiles/my_executable.dir
+/Users/yangyizhi/Documents/M1 CHPS/TOP/TOP-project/src/CMakeFiles/edit_cache.dir
+/Users/yangyizhi/Documents/M1 CHPS/TOP/TOP-project/src/CMakeFiles/rebuild_cache.dir

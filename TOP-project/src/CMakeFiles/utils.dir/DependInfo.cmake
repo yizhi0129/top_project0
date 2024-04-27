@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/e/vs缓存/TOP/TOP-project/src/chrono.c" "CMakeFiles/utils.dir/chrono.c.o" "gcc" "CMakeFiles/utils.dir/chrono.c.o.d"
+  "/Users/yangyizhi/Documents/M1 CHPS/TOP/TOP-project/src/chrono.c" "CMakeFiles/utils.dir/chrono.c.o" "gcc" "CMakeFiles/utils.dir/chrono.c.o.d"
   )
 
-# Targets to which this target links.
-set(CMAKE_TARGET_LINKED_INFO_FILES
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

@@ -9,7 +9,7 @@
 #include <mpi.h>
 #include <stdio.h>
 
-static char* DEFAULT_CONFIG_PATH = "config.txt";
+static char* DEFAULT_CONFIG_PATH = "../config.txt";
 static char* DEFAULT_OUTPUT_PATH = NULL;
 
 static void save_results(
@@ -136,12 +136,9 @@ i32 main(i32 argc, char* argv[argc + 1]) {
         }
 #endif
 
-        chrono_start(&chrono);
-        // Compute Jacobi C=B@A (one iteration)
-        solve_jacobi(&A, &B, &C);
 
-        // Exchange ghost cells for A and C meshes
-        // No need to exchange B as its a constant mesh
+        chrono_start(&chrono);
+        solve_jacobi(&A, &B, &C);
         comm_handler_ghost_exchange(&comm_handler, &A);
         comm_handler_ghost_exchange(&comm_handler, &C);
         chrono_stop(&chrono);

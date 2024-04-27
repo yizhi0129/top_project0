@@ -9,8 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/stencil.dir/stencil/mesh.c.o.d"
   "CMakeFiles/stencil.dir/stencil/solve.c.o"
   "CMakeFiles/stencil.dir/stencil/solve.c.o.d"
+  "libstencil.dylib"
   "libstencil.pdb"
-  "libstencil.so"
 )
 
 # Per-language clean rules from dependency scanning.

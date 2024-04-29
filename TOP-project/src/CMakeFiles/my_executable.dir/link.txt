@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/my_executable.dir/main.c.o -o my_executable  -Wl,-rpath,/scratch/students/users/user1133/top_project0/TOP-project/src libstencil.so libutils.so -lm /usr/lib/libmpi.so

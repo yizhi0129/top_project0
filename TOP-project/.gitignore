@@ -6,4 +6,4 @@ Makefile
 cmake_install.cmake
 my_executable
 .DS_Store
-.iCloud
+*.iCloud

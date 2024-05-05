@@ -15,7 +15,7 @@ static u32 gcd(u32 a, u32 b) {
         b = c;
     }
     return a;
-} // gcd(a, b) -> b, useful ???
+}
 
 static char* stringify(char buf[static MAXLEN], i32 num) {
     snprintf(buf, MAXLEN, "%d", num);
@@ -24,9 +24,9 @@ static char* stringify(char buf[static MAXLEN], i32 num) {
 
 comm_handler_t comm_handler_new(u32 rank, u32 comm_size, usz dim_x, usz dim_y, usz dim_z) {
     // Compute splitting
-    u32 const nb_z = gcd(comm_size, (u32)(dim_x * dim_y)); // nb_z = dim_x * dim_y
-    u32 const nb_y = gcd(comm_size / nb_z, (u32)dim_z); // nb_y = dim_z
-    u32 const nb_x = (comm_size / nb_z) / nb_y;  // nb_x = comm_size / (dim_x * dim_y * dim_z)
+    u32 const nb_z = gcd(comm_size, (u32)(dim_x * dim_y)); 
+    u32 const nb_y = gcd(comm_size / nb_z, (u32)dim_z); 
+    u32 const nb_x = (comm_size / nb_z) / nb_y;  
 
     if (comm_size != nb_x * nb_y * nb_z) {
         error(
@@ -135,13 +135,7 @@ static void ghost_exchange_left_right(
                         break;
                     case COMM_KIND_RECV_OP:
                         MPI_Recv(
-                            &mesh->cells[i][j][k].value,
-                            1,
-                            MPI_DOUBLE,
-                            target,
-                            0,
-                            MPI_COMM_WORLD,
-                            MPI_STATUS_IGNORE
+                            &mesh->cells[i][j][k].value, 1, MPI_DOUBLE, target, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE
                         );
                         break;
                     default:
@@ -205,13 +199,7 @@ static void ghost_exchange_front_back(
                         break;
                     case COMM_KIND_RECV_OP:
                         MPI_Recv(
-                            &mesh->cells[i][j][k].value,
-                            1,
-                            MPI_DOUBLE,
-                            target,
-                            0,
-                            MPI_COMM_WORLD,
-                            MPI_STATUS_IGNORE
+                            &mesh->cells[i][j][k].value, 1, MPI_DOUBLE, target, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE
                         );
                         break;
                     default:
